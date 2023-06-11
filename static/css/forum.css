@@ -1,0 +1,72 @@
+:root {
+  --body-bg-color: #bcbabe;
+  --green: #A1D6E2;
+  --light-green: #1995AD;
+  --light-grey: #dce4e3;
+  --text-color: #d6e1e1;
+  --content :#1995AD ;
+  --bg-content:#fff;
+  --border : #A1D6E2;
+}
+
+* {
+    color: black;
+}
+
+.main-content {
+    text-align: center;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .forum-container {
+    max-height: 700px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    border: 1px solid var(--content);
+    background-color: var(--green);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 1%
+  }
+  
+  .message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .sender {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .content {
+    background-color: var(--content);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .message-form {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .message-form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .message-form button {
+    padding: 10px 20px;
+    background-color: var(--light-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

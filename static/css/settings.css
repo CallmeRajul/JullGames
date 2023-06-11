@@ -1,0 +1,77 @@
+:root {
+  --body-bg-color: #bcbabe;
+  --green: #A1D6E2;
+  --light-green: #1995AD;
+  --light-grey: #dce4e3;
+  --text-color: #d6e1e1;
+  --content :#1995AD ;
+  --bg-content:#fff;
+  --border : #A1D6E2;
+}
+
+*{
+    color: black;
+}
+
+.main-content {
+    text-align: center;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .settings-container {
+    margin-bottom: 20px;
+    margin: 25px;
+    border: 1px solid var(--content);
+    border-radius: 1%;
+    background-color: var(--green);
+    padding: 25px;
+    max-width: 100vh;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .setting-option {
+    margin-bottom: 10px;
+    text-align: left;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="checkbox"], select, input[type="password"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: var(--content);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .save-button {
+    padding: 10px 20px;
+    background-color: var(--content);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+  

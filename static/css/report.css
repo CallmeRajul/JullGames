@@ -1,0 +1,55 @@
+:root {
+  --body-bg-color: #bcbabe;
+  --green: #A1D6E2;
+  --light-green: #1995AD;
+  --light-grey: #dce4e3;
+  --text-color: #d6e1e1;
+  --content :#1995AD ;
+  --bg-content:#fff;
+  --border : #A1D6E2;
+}
+
+* {
+    color: black;
+}
+
+.main-content {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .report-form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  select, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: var(--content);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

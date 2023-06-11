@@ -1,0 +1,31 @@
+* {
+    color: black;
+}
+
+.gamers-container {
+  width: 500px;
+}
+
+.gamers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gamer {
+  text-align: center;
+}
+
+.gamer img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.gamer h3 {
+  margin-top: 10px;
+}
+
+.gamer p {
+  font-style: italic;
+}

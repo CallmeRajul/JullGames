@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/forum.css')}}" />
+    <title>Expanding Sidebar Navigation Example</title>
+  </head>
+  <body>
+    <div class="container">
+      {% include 'menu/sidebar.html' %}
+      <section class="main">
+        {% include 'menu/navbar.html' %}    
+        <div class="main-content">
+          <div class="company">
+            <h1>Forum Diskusi Game</h1>
+  
+        <div class="forum-container">
+            <div class="message">
+            <div class="sender">RRQ Dapa&nbsp;&nbsp;&nbsp;:</div>
+            <div class="content">p mabar.</div>
+            </div>
+            
+            <div class="message">
+            <div class="sender">EVOS Doni&nbsp;&nbsp;&nbsp;:</div>
+            <div class="content">gas.</div>
+            </div>
+
+            <div class="message">
+              <div class="sender">ONIC Fadly&nbsp;&nbsp;:</div>
+              <div class="content">ngilu euy.</div>
+              </div>
+
+            <div class="message">
+              <div class="sender">AURA Udin&nbsp;&nbsp;:</div>
+              <div class="content">moal ngajak urang?.</div>
+              </div>
+            
+            <div class="message">
+            <div class="sender">BTR Rezwa&nbsp;&nbsp;:</div>
+            <div class="content">moal sia noob.</div>
+            </div>
+
+            <div class="message">
+              <div class="sender">AE Syahid&nbsp;&nbsp;&nbsp;:</div>
+              <div class="content">Waokawo</div>
+              </div>
+
+            <div class="message">
+            <div class="sender">DRX Indra&nbsp;&nbsp;&nbsp;:</div>
+            <div class="content">Info tugas isuk.</div>
+            </div>
+
+            <div class="message">
+              <div class="sender">AERO Ridho&nbsp;:</div>
+              <div class="content">b indo wawancara cenah.</div>
+              </div>
+
+            <div class="message">
+            <div class="sender">NXL Arka&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;:</div>
+            <div class="content">perasaan ieu forum game dah naha jadi tugas.</div>
+            </div>
+            <!-- Tambahkan pesan lainnya di sini -->
+            
+        </div>
+        
+        <form class="message-form">
+            <input type="text" placeholder="Ketik pesan Anda">
+            <button type="submit">Kirim</button>
+        </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="{{url_for('static' , filename='js/script.js')}}"></script>
+
+</html>

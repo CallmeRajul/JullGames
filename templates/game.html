@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/game.css')}}" />
+    <title>Expanding Sidebar Navigation Example</title>
+  </head>
+  <body>
+    <div class="container">
+      {% include 'menu/sidebar.html' %}
+      <section class="main">
+        {% include 'menu/navbar.html' %}
+        <div class="main-content">
+
+            <div class="game-container">
+                <br>
+                <h2>Rekomendasi game populer</h2>
+                <br>
+                <br>
+                <div class="game-grid">
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/ml.jpg')}}" alt="Game 1" />
+                    <h3>Mobile Legends</h3>
+                    <p>Mobile Legends adalah game MOBA populer yang dikembangkan oleh Moonton. </p>
+                    <a href="https://m.mobilelegends.com/en" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/ff.jpg')}}" alt="Game 1" />
+                    <h3>Free Fire</h3>
+                    <p>Free Fire adalah game battle royale yang seru dimainkan dengan aksi intens dan pertempuran  </p>
+                    <a href="https://ff.garena.com/id/" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/pubg.jpg')}}" alt="Game 1" />
+                    <h3>Pubg Mobile</h3>
+                    <p>PUBG adalah game battle royale dengan gameplay intens dalam pertempuran bertahan hidup.  </p>
+                    <a href="https://www.pubgmobile.com/id/home.shtml" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/genshin.jpeg')}}" alt="Game 1" />
+                    <h3>Genshin Impact</h3>
+                    <p>Open World game RPG dengan grafis yang memukau dan petualangan yang menarik</p>
+                    <a href="https://genshin.hoyoverse.com/en/" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/amongus.jpg')}}" alt="Game 1" />
+                    <h3>Among Us</h3>
+                    <p>Game sosial deduksi yang seru dimainkan bersama teman-teman dalam mencari siapa impostor.</p>
+                    <a href="https://among-us.fandom.com/wiki/Among_Us_Wiki" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/fortnite.webp')}}" alt="Game 1" />
+                    <h3>Fortnite</h3>
+                    <p>Battle royale yang menawarkan aksi seru dan pembangunan yang kreatif.</p>
+                    <a href="https://www.fortnite.com/" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/warzone.webp')}}" alt="Game 1" />
+                    <h3>COD : Warzone</h3>
+                    <p>Pengalaman FPS yang intens dalam pertempuran royale yang epik dan menarik.</p>
+                    <a href="https://www.callofduty.com/warzone" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/minecraft.jpeg')}}" alt="Game 1" />
+                    <h3>Minecraft</h3>
+                    <p>Dunia penuh kreativitas tanpa batas untuk membangun dan menjelajah.</p>
+                    <a href="https://www.minecraft.net/en-us" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/apex.jpeg')}}" alt="Game 1" />
+                    <h3>Apex Legends</h3>
+                    <p>Battle royale dengan karakter unik dan gameplay tim yang dinamis.</p>
+                    <a href="https://www.ea.com/games/apex-legends" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/valo.jpg')}}" alt="Game 1" />
+                    <h3>Valorant</h3>
+                    <p>FPS taktis yang menawarkan pertempuran kompetitif dengan gaya bermain yang unik.</p>
+                    <a href="https://playvalorant.com/en-us/" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/fifa.webp')}}" alt="Game 1" />
+                    <h3>FIFA 21</h3>
+                    <p> Game sepak bola terkini dengan grafis yang realistis dan mode permainan yang beragam.</p>
+                    <a href="https://www.ea.com/games/fifa/fifa-21" class="download-link">Download</a>
+                  </div>
+                  <div class="game">
+                    <img src="{{url_for ('static', filename='images/game/over.jpeg')}}" alt="Game 1" />
+                    <h3>Overwatch</h3>
+                    <p> Game first-person shooter dengan karakter unik dan pertempuran tim yang seru. (Overwatch)</p>
+                    <a href="https://overwatch.blizzard.com/en-us/" class="download-link">Download</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="{{url_for('static' , filename='js/script.js')}}"></script>
+
+</html>

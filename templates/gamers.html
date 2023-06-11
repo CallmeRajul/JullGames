@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/global.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gamers.css')}}" />
+    <title>Expanding Sidebar Navigation Example</title>
+  </head>
+  <body>
+    <div class="container">
+      {% include 'menu/sidebar.html' %}
+      <section class="main">
+        {% include 'menu/navbar.html' %}    
+        <div class="main-content">
+            <div class="gamers-container">
+                <h2>Gamers</h2>
+                <div class="gamers-grid">
+                  <div class="gamer">
+                    <img src="path/to/player1.jpg" alt="Player 1" />
+                    <h3>Player 1</h3>
+                    <p>Game 1</p>
+                  </div>
+                  <div class="gamer">
+                    <img src="path/to/player2.jpg" alt="Player 2" />
+                    <h3>Player 2</h3>
+                    <p>Game 2</p>
+                  </div>
+                  <!-- Add more gamers for additional players -->
+                </div>
+              </div>              
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="{{url_for('static' , filename='js/script.js')}}"></script>
+
+</html>

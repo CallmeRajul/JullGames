@@ -1,0 +1,124 @@
+
+
+
+:root {
+  --body-bg-color: #F1F1F2;
+  --green: #A1D6E2;
+  --light-green: #1995AD;
+  --light-grey: #dce4e3;
+  --text-color: #d6e1e1;
+  --content :#1995AD ;
+  --bg-content:#fff;
+  --border : #440a86;
+}
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: var(--body-bg-color);
+    margin: 0;
+    padding : 0;
+  }
+  
+  body .container {
+    display: flex;
+    justify-content: right;
+    height: 100vh;
+    width: auto;
+    gap: 20px;
+    border: none;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 78px;
+    height: 100vh;
+    background-color: var(--green);
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s;
+  }
+  
+  .main {
+    width: calc(100% - 78px);
+    height: 100vh;
+    padding: 20px;
+    color: var(--text-color);
+    transition: all 0.2s;
+    padding: 0;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--green);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 1rem;
+    padding: 15px;
+    gap: 15px;
+    transition: all 0.2s;
+  }
+  
+  .icon:hover {
+    background-color: var(--light-green) !important;
+    cursor: pointer;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: all 0.2s;
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 10px;
+    transition: all 0.2s;
+  }
+  
+  .navbar {
+    background-color: var(--content);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    font-weight: bold;
+  }
+  
+  .navbar a:not(:last-child) {
+    margin-right: 10px; /* Add margin between links */
+  }
+  
+  .navbar a:hover {
+    background-color: #cb2121;
+  }
+
+  
+  

@@ -1,0 +1,75 @@
+:root {
+  --body-bg-color: #bcbabe;
+  --green: #A1D6E2;
+  --light-green: #1995AD;
+  --light-grey: #dce4e3;
+  --text-color: #d6e1e1;
+  --content :#1995AD ;
+  --bg-content:#fff;
+  --border : #A1D6E2;
+}
+
+* {
+  color: black;
+}
+
+.main-content {
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Add this line */
+  height: 100vh; /* Add this line */
+}
+
+.game-container {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: flex; /* Add this line */
+  flex-direction: column; /* Add this line */
+  justify-content: center; /* Add this line */
+  flex-grow: 1; /* Add this line */
+  margin: 20px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center; /* Add this line */
+}
+
+/* Rest of the CSS styles remain the same */
+  
+  .game {
+    text-align: center;
+  }
+  
+  .game img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .game h3 {
+    margin-top: 8px;
+  }
+  
+  .game p {
+    margin-bottom: 10px;
+  }
+  
+  .download-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--content);
+    color: white;
+    text-decoration: none;
+  }
+  
+  .download-link:hover {
+    background-color: var(--green);
+  }
+  

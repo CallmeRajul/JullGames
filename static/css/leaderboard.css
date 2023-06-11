@@ -1,0 +1,64 @@
+:root {
+  --body-bg-color: #bcbabe;
+  --green: #A1D6E2;
+  --light-green: #1995AD;
+  --light-grey: #dce4e3;
+  --text-color: #d6e1e1;
+  --content :#1995AD ;
+  --bg-content:#fff;
+  --border : #1995AD;
+}
+
+* {
+    color: black;
+}
+
+.main-content {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .leaderboard-container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 400px;
+    overflow-y: scroll;
+    margin: 20px;
+  }
+  
+  .leaderboard-table {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--border);
+  }
+  
+  table thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  table tbody td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style tambahan untuk membuat tabel lebih menarik */
+  table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tbody tr:hover {
+    background-color: #eaf5ff;
+  }
+  
